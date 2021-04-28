@@ -1,0 +1,28 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url('//cdn.jsdelivr.net/gh/boninto/fontchu@4b087ca/css/all.min.css');
+@import url('//db.onlinewebfonts.com/c/3842e61259749b29f8f2859c43be9506?family=AlleynW01-Medium');
+
+body {
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  text-align: center;
+  font-family: "AlleynW01-Medium";
+  position: relative;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+}

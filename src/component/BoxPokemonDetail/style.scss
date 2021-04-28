@@ -1,0 +1,55 @@
+.detail {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    &__name {
+        color: #6d6d6d;
+        font-family: "AlleynW01-Medium", sans-serif;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &--mar {
+            margin: 0 3rem;
+        }
+        &--block {
+            &:hover {
+                transform: none;
+            }
+            img {
+                width: 400px;
+                height: auto;
+            }
+        }
+
+        &--bio {
+            perspective: 400px;
+        }
+
+        &--deg {
+            transition: 0.3s;
+            transform: rotateY(30deg);
+            &:hover {
+                transform: none;
+            }
+        }
+        &--degR {
+            transition: 0.3s;
+            transform: rotateY(-30deg);
+            &:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            &--deg,
+            &--degR {
+                transform: none;
+            }
+        }
+    }
+}

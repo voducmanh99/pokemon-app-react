@@ -1,0 +1,101 @@
+.filter{
+    @media(max-width: 768px) {
+        &__container{
+            padding: 0!important;
+        }
+        &__block{
+            margin: 0!important;
+            width: 100%!important;
+        }
+    }
+    &__container{
+        padding: 0 40px;
+    }
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.button{
+    border-radius: 25px;
+    padding: 3px 20px;
+    color: #fff;
+    margin: 0 8px 8px 0;
+    position: relative;
+    border: 1px solid transparent;
+    font-size: 13px;
+    &--disabled{
+        pointer-events: none;
+        cursor: default;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    &:hover{
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    &:disabled{
+        border: 1px solid #fff;
+    }
+    &--all{
+        background-color:#708ed2 !important;
+    }
+    &--fire{
+        background-color:#fd4949!important;
+    }
+    &--grass{
+        background-color: #8de092!important;
+    }
+    &--electric{
+        background-color: #fbdf54!important;
+    }
+    &--water{
+        background-color: #61c1ef!important;
+    }
+    &--ground{
+        background-color: #ffad5c!important;
+    }
+    &--rock{
+        background-color: #b5b5b5!important;
+    }
+    &--fairy{
+        background-color: #f1b2fb!important;
+    }
+    &--poison{
+        background-color: #9370c1!important;
+    }
+    &--bug{
+        background-color: #fbb858!important;
+    }
+    &--dragon{
+        background-color: #5f7eb5!important;
+    }
+    &--psychic{
+        background-color: #cbd04b!important;
+    }
+    &--flying{
+        background-color: #c1bfbf!important;
+    }
+    &--fighting{
+        background-color: #bdb6a7!important;
+    }
+    &--normal{
+        background-color: #c7c5c5!important;
+    }
+    &--ghost{
+        background-color: #bd85f1!important;
+    }
+    &--ice{
+        background-color: #6495ed!important;
+    }
+    &--dark{
+        background-color: #000!important;
+    }
+    &--steel{
+        background-color: #989997!important;
+    }
+}
