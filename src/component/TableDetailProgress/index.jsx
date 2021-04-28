@@ -4,6 +4,7 @@ import ProgressBar from "../../component/form-control/ProgessBar/index.jsx";
 
 function TableDetailProgress({ data }) {
     const { types, stats } = data;
+    console.log(stats);
     return (
         <table>
             <tr>
@@ -58,7 +59,19 @@ function TableDetailProgress({ data }) {
                 <td>
                     <p className="text__title">Total</p>
                 </td>
-                <td></td>
+                <td>
+                    <p className="text__info">
+                        {
+                            stats.reduce((acc, cur) => {
+                                const kq = acc.base_stat + cur.base_stat;
+
+                                return {
+                                    base_stat: kq,
+                                };
+                            }).base_stat
+                        }
+                    </p>
+                </td>
             </tr>
         </table>
     );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import pokemonApi from "../../api/pokemonApi";
 import BoxPokemonDetail from "../../component/BoxPokemonDetail";
+import Footer from "../../component/Footer";
 import Header from "../../component/Header/";
 import Loading from "../../component/Loading";
 

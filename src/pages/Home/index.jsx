@@ -144,7 +144,7 @@ function Home(props) {
                     )}
                 </>
             )}
-            <Footer />
+            {!loading && <Footer />}
         </div>
     );
 }
